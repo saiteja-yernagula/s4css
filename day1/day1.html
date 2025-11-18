@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <style>
+      /* .demo{
+            color:green;
+        }
+
+        #el{
+            color: red;
+        }  */
+
+        .demo , #el, h1{
+    background: navy;
+    }
+/* 
+        *{
+            background:rgb(170, 15, 15);
+            color:white
+        } */
+
+
+        
+        </style>
+
+</head>
+<body>
+    <!-- 
+    
+    css- cascading style sheets
+    css is a style sheet language
+    it is used to describe the presentation of an website
+    it deals with colors,fonts,animations,layouts 
+    and responsive design
+    it is used to add the different styles to an html elements
+
+    how to insert css
+    1) inline- styles are defined within the element
+    using style attribute
+
+    style='key:value;key2:value2'
+    <h1 style="color:rebeccapurple;font-family: cursive;">heading content</h1>
+
+    2) internal
+    in this styles are defined using style tag
+    in the head section
+    <style>
+        css syntax
+        selector{
+        declaration1;
+        declaration2;
+        }
+
+        selector- it is used to target the html
+        elements for applying styles
+        p{
+        color:red;
+        font-size:30px;
+        }
+    </style>
+
+    3) external
+    in this styles are defined in separate file with
+    .css extension can be linked to the html using
+    link tag
+
+       in demo.css
+       div{
+        color:red;
+       }
+       in html
+    <link rel="stylesheet" href="demo.css">
+
+
+    precedence
+    1) inline have high precedence
+    2) internal and external in this precedence
+    always depends the way you defined the styles and liks
+
+    types of selectors
+    1) simple selectors
+    2) combinators
+    3) pseudo classes
+    4) pseudo element 
+    5) attribute selectors
+
+    in simple selectors
+    tagname selector or element selector- it is used 
+    target the html elements based on a tagname
+    div{
+    color:red;
+    font-size:40px;
+    }
+
+    <div>content1</div>
+
+    classname selector-it is used 
+    target the html elements based on a classname
+    and class is denoted by .
+
+    .demo{
+    color:red;
+    }
+    <div class='demo'>content1</div>
+
+
+    id
+    it is used to apply styles to the element uniquely
+    id is always defined with #
+    #el{
+    color:red;
+    }
+
+    <div id='el'>content</div>
+
+
+    * universal
+    it is used to select the all element individually
+    for applying styles
+
+    *{
+    color:white;
+    background:black;
+    }
+
+    grouping selectors ,
+    it is used to group the element for applying
+    similar styles
+    .demo , #el, h1{
+    background: navyblue;
+    }
+
+
+    saiteja-yernagula
+
+        
+
+
+    `
+    -->
+
+    <div class="demo">element</div>
+    <div class="demo">element</div>
+    <div class="demo" id="el">element</div>
+    <div >element</div>
+    <div >element</div>
+    <div >element</div>
+    <div >element</div>
+
+    <h1>heading</h1>
+    <h1 class="demo">heading</h1>
+    <h1>heading</h1>
+
+</body>
+</html>
