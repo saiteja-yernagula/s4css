@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        boxsizing
+        display: inline and block and inline-block
+
+        combinators
+        it is used to targe the html based on 
+        a relationship between the elements
+
+        1) descendent selectors
+        it is used to apply styles to the childs
+        and subchilds
+        it is denoted by space
+
+        .container1 div{
+        background:navy;
+        border:1px solid white;
+        }
+    <div class="container1">
+        <div>some content</div>
+    </div>
+    <div class="container2">
+        <div>some content</div>
+    </div>
+
+    2) child selector
+    it is denoted by > symbol 
+    it is used to apply styles to the direct child
+
+    .container1>div{
+        border:1px solid blue;
+    }
+    .container1>section>div{
+        border:1px solid red;
+    }
+    
+    3) adjacent sibling selector
+    it is denoted by + symbol
+    it is used to apply style to the first adjacent
+    element of a main element
+
+    section+h1{
+            background: red;
+        }
+        <section>content</section>
+        <h1>first sister</h1>//it will be applied
+        
+        <section>content</section>
+        <p>between</p>
+        <h1>first sister</h1> //wont be applied
+
+        4) general sibling selector
+        it is denoted by ~ symbol
+        it is used to apply styles to all the sibling elements
+        
+        section~h1{
+            background: red;
+        }
+
+
+
+        units
+        1) absolute units(fixed)
+          px
+          inch
+          mm
+          cm
+
+        2) relative units(varies or depends on something)
+          %-it always depends on the parent
+                 <div class="container">
+                      content
+                   <div class="child">child</div>
+                 </div>
+                 .container{
+                       background: lightskyblue;
+                       width:50%;
+                   }
+                   .child{
+                       width:50%;
+                       background: lightcoral;
+                   }
+        2) vh and vw
+        it always depends on the viewpoint(visible screen)
+            .container{
+                background: lightskyblue;
+                width:100vw;
+                height:100vh;
+            }
+
+        3) em and rem
+em- it always depends on the fontsize of the parent
+                   .container>div{
+                    font-size: 2em;
+                   }          
+//here 2*16px=32px                 
+<div class="container">
+    <div>some content</div>
+</div>
+
+//here 2*32px=64px                 
+<h1 class="container">
+    <div>content</div>
+</h1>
+
+rem
+it always depends on the fontsize of the root element
+h1----16px
+//here 2*16px=32px                 
+<div class="container">
+    <div>some content</div>
+</div>
+
+//here 2*16px=32px                 
+<h1 class="container">
+    <div>content</div>
+</h1>
+                   */
+
+
+
+                   .container>div{
+                    font-size: 2rem;
+                   }
+            
+  
+    </style>
+</head>
+<body style="border:1px solid red;">
+
+    <h1>some content</h1>
+<div class="container">
+    <div>some content</div>
+</div>
+
+
+<h1 class="container">
+    <div>some content</div>
+</h1>
+
+</body>
+</html>
