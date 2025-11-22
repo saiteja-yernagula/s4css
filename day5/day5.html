@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        units
+        absolute- px inch cm mm 
+        relative- % vh vw em rem
+        
+        combinators
+        descendent  , child , adjacent sibling, general sibling
+
+        pseudo class selectors
+        it is used to target the html elements based on 
+        a state and position of an element
+
+        selector:state{
+        color:orange
+        }
+        
+        */
+
+        a:link{
+            color:green
+        }
+        a:visited{
+            color:yellow;
+        }
+        a:hover{
+            color: skyblue;
+        }
+        a:active{
+            color:brown;
+        }
+
+        input:focus{
+            background: yellow;
+            color:red;
+        }
+        #home:target{
+            background-color: skyblue;
+        }
+        
+        #about:target{
+            background-color: lightcoral;
+        }
+
+        
+        #service:target{
+            background-color:deeppink;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+
+        :root{
+            --primary-color:yellow;
+            --secondary-color:lightblue;
+            --text:white;
+        }
+        h1{
+            color:var(--text);
+            background: var(--primary-color);
+        }
+        p{
+            border:1px solid var(--primary-color);
+        }
+        div{
+            margin:10px;
+            width:200px;
+            border:2px solid black;
+            display: none;
+        }
+        input:checked~div{
+            display: block;
+        }
+
+
+        li:first-child{
+            color:red;
+        }
+
+        li:last-child{
+            color:green
+        }
+
+        li:nth-child(5){
+            color:yellow
+        }
+
+        li:nth-last-child(even){
+            background: rgb(2, 96, 96);
+        }
+
+        li:nth-child(odd){
+            background: rgb(28, 71, 71);
+        } 
+
+        tr:first-child,tr:last-child{
+            background: navy !important;
+            color:white
+
+        }
+        tr:nth-child(3n){
+            background: lightsteelblue;
+        }
+
+        /* 
+        
+        how to hide and display element
+        
+        display:none;
+            it is used to hide the element and space
+        visibility:hidden;
+            it is used to hide the element but keeps the
+            space occupied
+
+        display:block;
+        visibility:visible;
+        
+        */
+        #el{
+            /* display: none; */
+            visibility: hidden;
+
+        }
+        #el{
+            /* display: inline-block; */
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="menu">menu</label>
+    <input type="checkbox" id="menu" style="visibility:hidden">
+
+    <div class="div">content1</div>
+    <div class="div">content2</div>
+    <div class="div">content3</div>
+
+
+
+    <!-- <table>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+        <tr>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+            <td>contnet</td>
+        </tr>
+    </table>
+    <ul>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+    </ul> -->
+
+
+    <!-- <input type="checkbox">
+
+
+    <h1>main heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo eius debitis itaque dolorem! Quisquam maxime consequatur deleniti id cupiditate voluptates non quaerat, a, totam, quod perspiciatis quis eius amet.</p>
+    <div>some content</div> -->
+<!-- 
+
+<a href="#home">home</a>
+<a href="#about">about</a>
+<a href="#service">service</a>
+    <input type="text">
+<a href="https://en.wikipedia.org/wiki/Artificial_Intelligence_Markup_Language">aiml</a>
+    
+
+<div id="home">
+
+    <h1 >home
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+    </h1>
+</div>
+    <h1 id="about">about
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1>
+</h1>
+
+<h1 id="service">service
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1></h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1></h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1></h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1></h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam libero nam, praesentium esse beatae, laborum perspiciatis ut et, laudantium voluptates? Incidunt similique, odit vel corporis doloribus amet molestiae tenetur!</h1></h1>
+
+
+ -->
+
+</body>
+</html>
