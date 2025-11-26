@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Playwrite+US+Trad+Guides&display=swap" rel="stylesheet">
+    <style>
+        /* 
+        
+        positions
+        fixed  -out of the flow
+               based on viewport
+        and sticky
+           normal flow
+           based on offset condition
+
+        text properties
+        1) text-align
+          it is used to contorl alignment of a text
+          text-align:center
+                    left 
+                    right
+                    justify
+
+          text-align-last:center
+
+          h1{
+            text-align: justify;
+          text-align-last:justify;
+        }
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia enim itaque ab numquam neque nesciunt voluptatum provident, impedit voluptatibus architecto eius cupiditate expedita est unde. Explicabo natus amet beatae!
+    </h1>
+
+        2) text decoration
+        text-decoration-style: solid or double or dotted
+                             or dashed or none or wavy or none
+        text-decoration-line:overline or underline or 
+                           linethrough
+
+        text-decoration-color:blue;
+        text-decoration-thickness:5px ;
+
+        text-decoration: thickenss style color typeofline
+        text-decoration:  2px dotted yellow line-through;
+
+        3) text spacing
+        word-spacing--- specifies the spaces between words
+        letter-spacing--- specifies the spaces between letters
+        line-height--- specifies the gap between lines
+        white-space: nowrap; wrap ; pre-wap
+                   specify how space and line break are handled 
+
+           p{
+        word-spacing: 5px; 
+       letter-spacing: 2px; 
+       line-height: 5;
+        white-space: nowrap; 
+        /         wrap
+                      pre-wrap
+
+    4) text transform
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+
+    5) direction
+p{
+   direction:rtl;
+   unicode-bidi: bidi-override;
+}
+6) text-shadow
+text-shadow: h-offset v-offset blur color;
+text-shadow: 1px  1px  10px blue;
+
+7) box shadow
+box-shadow: h-offset v-offser blur spread color inset;
+box-shadow: 0px 0px 5px 1px orangered, 2px 2px 3px 2px black;
+
+    font properties
+1) font-family:arial or cursive or verdana
+   font-size : 1.5rem
+   font-weight: 100-900 or bold or bolder or normal or lighter
+   font-style:normal or italic  */
+
+p{
+width:25%;
+box-shadow: 0px 0px 5px 1px orangered, 2px 2px 3px 2px black;
+/* 
+font-family:cursive  ,monospace  ;
+font-size: 1.3rem;
+font-weight: 900;
+font-style: italic; */
+/* google font---select font ---get font ---get embed code
+   copy the link in head ----properties in selector */
+font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+    </style>
+</head>
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore soluta similique laudantium necessitatibus error magni alias iste, impedit, sint at autem suscipit quis corrupti, consequatur dolorum consequuntur maiores omnis?
+    </p>
+</body>
+</html>
