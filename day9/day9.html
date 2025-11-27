@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+        text properties and font properties
+
+
+        backgrounds 
+        1) 
+        bacground-color:
+        bacground-color: blue
+        bacground-color: rgba(0-255,0-255,0-255,0-1)
+        background-color:hsl(149, 98%, 62%);
+        background-color:#09f;
+
+        2) background-image: url('img.jpg')
+
+        3) background-repeat:no-repeat or repeat-x or repeat-y;
+
+        4)background-size :cover or contain or 100% 100%
+
+        5)background-position: top right
+                            : top center
+                            : top left
+                            : bottom right 
+                            : bottom center 
+                            : bottom center 
+                            : center center
+                            :center left
+                            : center right
+
+        6) background-attached: fixed or scroll;
+
+shorthand
+background:blue url('example.jpg')  repeat-x  fixed  topright;
+
+ pseudo element selectors
+ it is used to target the html elements based on 
+ a particular part of an element
+        */
+    h1::first-letter{
+        font-size: 2em;
+        color:red
+    }
+    h1::first-line{
+        color:yellow
+    }
+    h1::selection{
+        color:red
+    }
+    li::marker{
+        color:green;
+        font-size: 2rem;
+    }
+    div::after{
+        content:' welcome';
+        color:blue;
+    }
+    div::before{
+        content:' hi';
+        color:blue;
+    }
+    input::placeholder{
+        color:chartreuse
+    }
+    </style>
+</head>
+<body>
+
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+
+   <input type="text " placeholder="enter ur name">
+    <h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet fugiat placeat quae voluptate consequuntur maiores error aspernatur doloribus. Reiciendis id placeat asperiores molestias nihil fugiat neque provident fuga incidunt repudiandae.
+    </h1>
+    <ul>
+    <li>content</li>
+    <li>content</li>
+    <li>content</li>
+    <li>content</li>
+
+    </ul>
+    
+</body>
+</html>
