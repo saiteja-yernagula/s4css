@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        background and pseudo elements
+
+        flexbox
+        it is a one dimensional layout model
+        that is used to create layout for a webpage
+
+        flexbox have  
+        parent properties(flex-container properties)
+        child properties(flex-item properties)
+        
+        by applying flex to parent we can control 
+        the child items
+
+        parent properties
+        1)display: flex;
+        it is used to create flexbox that will change 
+        direction of items into row by default
+
+        2) flex-direction:
+        it is used to change the direction of the items
+        flex-direction: row; by default
+                        row-reverse;
+                        column;
+                        column-reverse;
+         
+        3) justify-content:
+        it is used to control the alignment on main axis
+justify-content:flex-start;by default
+                flex-end;
+                center;
+                space-between;
+                space-evenly;
+                space-around;
+
+        4) align-items:
+it is used to control the alignment of items on cross axis
+
+align-items: stretch; by default
+            flex-end;
+            flex-start;
+            center;
+
+        5)flex-wrap:
+    it is used to wrap the flex items to the next row
+       flex-wrap:wrap;
+                 wrap-reverse;
+        
+        6) align-content
+    it is used to control the alignment of items on 
+    cross axis when there is more than one row
+
+    align-content:stretch; by default
+                  center;
+                  flex-end;
+                  flex-start;
+                  space-between;
+                  space-around;
+                  space-evenly;
+    
+    7) gap:
+    it is used to create a gap between rows and columns
+    gap: rowgap columngap;
+    gap: 10px 30px;
+    gap: 30px;
+
+    8) flex-flow:it is a shorthand for flexdirection and wrap
+    flex-flow: column-reverse wrap-reverse;
+
+
+        */
+
+        .container{
+            background: orange;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top:0;
+        }
+        ul{
+            display: flex;
+            gap:20px;
+            list-style-type: none;
+        }
+
+        .container2{
+            display: flex;
+            height:100vh;
+            justify-content: space-evenly;
+        }
+        .child2,.child1{
+            width:40%;
+            line-height: 1.5
+        }
+        img{
+            width:80%;
+            height: 80%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>vector india</h1>
+         <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>service</li>
+         </ul>
+    </div>
+
+    <div class="container2">
+        <div class="child1">
+            <img src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+
+        <div class="child2">
+            <h2>heading </h2>
+            <p>Lorem ipsum dolor sit. Ratione veritatis incidunt harum dolorum provident nisi similique eveniet maiores explicabo quod voluptas dolor, itaque officia cupiditate. Doloribus numquam non natus laborum.</p>
+            <button>know more</button>
+        </div>
+    </div>
+
+    
+    <div class="container2">
+        
+                <div class="child2">
+                    <h2>heading </h2>
+                    <p>Lorem ipsum dolor sit. Ratione veritatis incidunt harum dolorum provident nisi similique eveniet maiores explicabo quod voluptas dolor, itaque officia cupiditate. Doloribus numquam non natus laborum.</p>
+                    <button>know more</button>
+                </div>
+        <div class="child1">
+            <img src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
