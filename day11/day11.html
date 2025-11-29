@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+https://pragna35.github.io/tasks10k/day20/flex1.html
+https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+
+    perfect centering
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+    flex properties
+    
+    
+    flex-child properties
+    1) order 
+    it is used to control the child items hierachial order
+    .box3{
+    order:-1
+    }
+    .box4{
+    order;-2
+    }
+    2) flex-basis
+    it is used to define initial width of an element
+
+    .box1{
+    flex-basis: 30%;
+    }
+    .box2{
+    flex-basis:70%;
+    }
+    
+    
+    
+    .box1{
+    flex-basis: 80%;
+    }
+    .box2{
+    flex-basis:20%;
+    }
+    
+
+    
+    .box1{
+    flex-basis: 33%;
+    }
+    .box2{
+    flex-basis:33%;
+    }
+    .box3{
+      flex-basis:33%;
+}
+
+3) flex-grow
+it is used to specify how the spaces are alloted for 
+an element
+
+.box1{
+flex-grow:2//it will occupy 50%
+}
+.box2,.box3{
+flex: grow 1;
+}
+
+4) flex-shrink
+it is used to specify how much an element can shrink
+as compare to the another element
+
+.box1{
+flex-shrink:0;//it prevents the shrinkage
+}
+.box2{
+flex-shrink:10;//it will shrink faster than other elements
+}
+
+   
+5) flex
+it is shorthand property for flex-grow shirnk basis
+  flex: 1 1 30%
+    
+    */
+
+    /* .container{
+        display: flex;
+        justify-content:space-evenly;
+        gap:10px;
+        height: 100vh;
+        background-color: lightgoldenrodyellow;
+
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+   .box{
+    background:lightblue;
+  
+   }
+
+   .box1{
+    /* flex-basis: 33%; */
+    /* flex-grow:4; */
+    /* flex-shrink:0; */
+   /* } */
+   /* .box2{ */
+    /* flex-basis: 33%; */
+    /* /flex-grow:1; */
+    /* flex-shrink:10; */
+
+   /* } */
+   /* .box3{ */
+    /* flex-basis: 33%; */
+    /* flex-grow:1; */
+
+   /* } */ 
+
+.card{
+    border:2px solid black;
+padding:20px;
+margin:10px;
+}
+   .cardc{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .carda{
+    display: flex;
+    
+   }
+   .container{
+    display: flex;
+    justify-content: space-evenly;
+    gap:50px;
+   }
+   img{
+    width:70px;
+   }
+    </style>
+    <body>
+
+<!-- <div class="container">
+    <div class="box box1">box1  tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box2">box2 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box3">box3 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box3">box3 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box3">box3 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box3">box3 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box3">box3 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <div class="box box3">box3 tempore delectus cumque officiis nulla. Blanditiis?</div>
+    <!-- <div class="box box3">box3</div>
+    <div class="box box3">box3</div>
+    <div class="box box3">box3</div>
+    <div class="box box3">box3</div>
+    <div class="box box3">box3</div>
+    <div class="box box3">box3</div> -->
+    <!-- <div class="box ">box4</div> -->
+<!-- </div>  -->
+
+<div class="container">
+
+
+<div class="card">
+    <div class="carda">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="">
+        <div>
+            <h1>stripe</h1>
+            <p>paymentservices</p>
+            <b> * * * *</b>
+        </div>
+    </div>
+    <div class="cardb">
+        <b>
+            Get more context on your users with stripe data inside our platform.
+        </b>
+    </div>
+    <div class="cardc">
+        <div>installed</div>
+        <div>63 times</div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="carda">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="">
+        <div>
+            <h1>stripe</h1>
+            <p>paymentservices</p>
+            <b> * * * *</b>
+        </div>
+    </div>
+    <div class="cardb">
+        <b>
+            Get more context on your users with stripe data inside our platform.
+        </b>
+    </div>
+    <div class="cardc">
+        <div>installed</div>
+        <div>63 times</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="carda">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="">
+        <div>
+            <h1>stripe</h1>
+            <p>paymentservices</p>
+            <b> * * * *</b>
+        </div>
+    </div>
+    <div class="cardb">
+        <b>
+            Get more context on your users with stripe data inside our platform.
+        </b>
+    </div>
+    <div class="cardc">
+        <div>installed</div>
+        <div>63 times</div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+
+
+    <div class="card">
+        <div class="carda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="">
+            <div>
+                <h1>stripe</h1>
+                <p>paymentservices</p>
+                <b> * * * *</b>
+            </div>
+        </div>
+        <div class="cardb">
+            <b>
+                Get more context on your users with stripe data inside our platform.
+            </b>
+        </div>
+        <div class="cardc">
+            <div>installed</div>
+            <div>63 times</div>
+        </div>
+    </div>
+    
+    
+    <div class="card">
+        <div class="carda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="">
+            <div>
+                <h1>stripe</h1>
+                <p>paymentservices</p>
+                <b> * * * *</b>
+            </div>
+        </div>
+        <div class="cardb">
+            <b>
+                Get more context on your users with stripe data inside our platform.
+            </b>
+        </div>
+        <div class="cardc">
+            <div>installed</div>
+            <div>63 times</div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="carda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="">
+            <div>
+                <h1>stripe</h1>
+                <p>paymentservices</p>
+                <b> * * * *</b>
+            </div>
+        </div>
+        <div class="cardb">
+            <b>
+                Get more context on your users with stripe data inside our platform.
+            </b>
+        </div>
+        <div class="cardc">
+            <div>installed</div>
+            <div>63 times</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
