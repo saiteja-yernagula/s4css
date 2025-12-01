@@ -1,0 +1,114 @@
+https://pragna35.github.io/tasks10k/day20/flex1.html
+https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+        flex child properties
+
+
+        grid 
+        it is multi dimensional layout model that is used
+        to create complex layouts
+
+        grid have grid-container properties and 
+        child(grid item properties)
+
+        grid-container properties
+        1) display:grid;
+         it is used to create grid container but it doen't
+         apply default value of row
+
+        2) grid-template-columns: 
+        it is used to specify the no of columns and 
+        size of each columns
+        grid-template-columns: 100px  200px 250px;
+        grid-template-columns: auto auto;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-columns: repeat(5,auto);
+
+        3) grid-template-rows:
+        it is used to specify the no of rows and
+        size of the each row
+        grid-template-rows: 100px  200px 250px;
+        grid-template-rows: 1fr 2fr 1fr  ;
+        grid-template-columns: 50% 25% 25%;
+
+       4) justify-content
+       it is used to control the grid items on x axis
+       justify-content:start;
+                        :end;
+                        :center;
+                        :space-between;
+                        :space-evenly;
+                        :space-around;
+
+       5) align-content: 
+       it is used to control the grid items on y axis 
+       align-content:start;
+                        :end;
+                        :center;
+                        :space-between;
+                        :space-evenly;
+                        :space-around;
+        
+        6) gap:
+        it is used create the gap between rows and columsn
+        gap : rowgap columngap;
+        gap:100px 40px;
+        gap:40px;//row and columns same size
+
+        7) place items;
+        it is used control the alignment on y and x axis
+        within the cell
+
+        it is a shorthand for align-items and justify items
+
+        place-items: start/end/center   start/end/center;
+        place-items: yaxis  xaxis;
+
+
+
+        */
+        .parent{
+            display: grid;
+            gap:10px;
+            height: 100vh;
+            background: lightgoldenrodyellow;
+            grid-template-columns: repeat(3,200px);
+            justify-content: space-evenly;
+            /* align-content: space-around; */
+            place-items: start end;
+            
+
+
+
+
+        }
+        .child{
+            background: lightcoral;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">card1</div>
+        <div class="child">card2</div>
+        <div class="child">card3</div>
+        <div class="child">card4</div>
+        <div class="child">card5</div>
+        <div class="child">card6</div>
+        <div class="child">card7</div>
+        <div class="child">card8</div>
+    </div>
+    
+    
+</body>
+</html>
