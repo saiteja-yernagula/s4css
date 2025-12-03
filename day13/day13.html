@@ -1,0 +1,127 @@
+<!-- https://kumbhamajay.github.io/All-Tasks/28May/grid.html
+ project -https://jevelin.shufflehound.com/hello/
+ https://docs.google.com/spreadsheets/d/11WLAfmvXJBfXtCI-au_A_iHQouoWcwSWCxVPu4aP_Bw/edit?gid=0#gid=0
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        grid parent properties
+        display:grid;
+        grid-template-columns
+        grid-template-rows
+        justify-contetn
+        align-content
+        place-items
+        gap
+
+        it is used for merging rows and columns based on grid-areas
+        grid-template-areas:
+        'item1 item2 item2'---row1
+        'item3 . item2'---row2
+        'item4 item4 item4'---row3;
+
+        child properties
+        grid-column-start:1
+        grid-column-end:3
+        grid-row-start:1
+        grid-row-start:3
+        shorthand
+        grid-column:1/3
+        grid-row:1/3
+
+        grid-area:header
+
+        
+          */
+  
+        /* .child{
+            background: lightcoral;
+            padding:10px;
+
+        }
+        .child:nth-child(1){
+            grid-column-start:1;
+        grid-column-end:3
+        }
+        .child:nth-child(2){
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+        .child:nth-child(5){
+            grid-column-start:1 ;
+            grid-column-end:4 ;
+        }
+        .child:nth-child(8){
+            grid-column-start:1 ;
+            grid-column-end:2;
+            grid-row-start:4 ;
+            grid-row-end:6 ;
+        } */
+
+        .container{
+            width:30%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:10px;
+            grid-template-areas: 
+            "h h h"
+            "n n n "
+            "s . asd " 
+            "a a asd " 
+            "f f f " 
+            ;
+        }
+        .child{
+            background: lightcoral;
+            padding:10px;
+        }
+        .child:nth-child(1){
+            grid-area:h
+        }
+        .child:nth-child(2){
+           grid-area: n;
+        }
+        .child:nth-child(3){
+            grid-area:s ;
+        
+        }
+        .child:nth-child(4){
+            grid-area:a ;
+            
+          
+        }
+        .child:nth-child(5){
+            grid-area:asd ;
+
+          
+        }
+        .child:nth-child(6){
+            grid-area:f ;
+
+          
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child">header</div>
+        <div class="child">nav</div>
+        <div class="child">section</div>
+        <div class="child">article</div>
+        <div class="child">asde</div>
+        <div class="child">footer</div>
+    </div>
+    
+</body>
+</html>
