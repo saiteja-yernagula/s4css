@@ -69,14 +69,14 @@
         } */
 
         .container{
-            width:30%;
+         
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-columns: 1fr 1fr 1fr; */
             gap:10px;
             grid-template-areas: 
             "h h h"
             "n n n "
-            "s . asd " 
+            "s s asd " 
             "a a asd " 
             "f f f " 
             ;
@@ -109,6 +109,18 @@
             grid-area:f ;
 
           
+        }
+
+        @media screen and (width<576px){
+            .container{
+                grid-template-areas: 
+            "h"
+            "n"
+            "s" 
+            "a" 
+            "asd " 
+            "f"; 
+            }
         }
     </style>
 </head>

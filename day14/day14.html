@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+        syntax
+        @media screen and (condition){
+            selector{
+            //declaration
+            }
+        }
+
+        @media screen and (width<576px){
+            body{
+            background:red
+            }
+        }
+        h1{
+            font-size: 8rem;
+        }
+        @media screen and (width<576px){
+            body{
+                background:red
+            }
+            h1{
+                font-size: 4rem;
+                color:white;
+            }
+        }
+        
+        @media screen and (width>576px) and (width<768px) {
+            body{
+                background: green;
+            }
+        }
+        @media screen and (width>768px)  {
+            body{
+                background: navy;
+            }
+        }
+
+
+ styles will applied after 576px
+width>576px or  min-width: 576px; 
+
+style will be applied below 576px 
+width<576px or max-width :576px;
+        
+
+        min -10 people 11  12 13 
+        max -70  68 69  70 
+
+        */
+        .child{
+            background:lightseagreen;
+            color:white;
+            padding:10px;
+        }
+        .parent{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:20px;
+        }
+        @media screen and (width<576px){
+            .parent{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (width>576px) and (width<768px){
+            .parent{
+                grid-template-columns:1fr 1fr ;
+            }
+        }
+        @media screen and (width>768px) and (width<992px){
+            .parent{
+                grid-template-columns:1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cards</h1>
+    <div class="parent">
+        <div class="child">
+            <h1>title</h1>
+            <p>some description about the products</p>
+            <b>price</b>
+            <a href="">know more</a>
+        </div>
+
+        <div class="child">
+            <h1>title</h1>
+            <p>some description about the products</p>
+            <b>price</b>
+            <a href="">know more</a>
+        </div>
+
+        <div class="child">
+            <h1>title</h1>
+            <p>some description about the products</p>
+            <b>price</b>
+            <a href="">know more</a>
+        </div>
+
+        <div class="child">
+            <h1>title</h1>
+            <p>some description about the products</p>
+            <b>price</b>
+            <a href="">know more</a>
+        </div>
+    </div>
+
+</body>
+</html>
