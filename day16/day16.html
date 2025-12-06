@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        third party libraries 
+        project approach
+
+
+
+        transitions
+        it is used to add specific duration to the 
+        properties which are dynamic
+
+        transition-property:width;
+        transition-duration:2s;
+        transition-delay:2s
+        transition-timing-function:ease-in
+
+        .box {
+            padding: 20px;
+
+             color: black;
+             width: 100px;
+             background: lightcoral;
+             font-size: 1rem;
+             height: 60px;
+             margin:2px;
+            transition-property:width ,height,background,color;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay:2s
+            transition-timing-function:ease-out;
+            
+            tranistion :property duration timingfun delay;
+            tranistion :all 2s ease-in 1s;
+
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 100px;
+            background: navy;
+            color: white;
+            font-size: 2rem;
+            margin:20px;
+        }
+        
+        .box2,
+        .box3 {
+            background: lightseagreen;
+            width: 100px;
+            height: 100px;
+            transition-property: height;
+            transition-duration: 2s;
+        }
+        
+        .box2:hover {
+            height: 150px;
+            
+        }
+        
+        .box3:hover {
+            background: lightcoral;
+            transition-property: background;
+            transition-duration: 1s;
+            
+            
+            
+        }
+
+
+        transform properties
+        it is used to control the appearance and position
+        of an element
+
+        transform : translate(xaxis,yaxis)
+                    scale(xaxis ,y axis)
+                    rotateX(deg)
+                    rotateY(deg)
+                    rotateZ(deg)
+                    skew(xaxis ,yaxis in deg)
+
+        transform : translate(100px ,200px)
+                    scale(1.2,1.5) or scale(0.5)
+                    rotateX(90deg)
+                    rotateY(180deg)
+                    rotateZ(360deg)
+                    skew(30deg ,20deg)
+
+        */
+        .box{
+            background: lightcoral;
+            width:200px;
+            padding:30px;
+            transition: all 2s;
+            
+        }
+        
+        .box:hover{
+            transform:scale(0.5)
+
+        }
+        </style>
+</head>
+
+<body>
+
+    <div class="box">content</div>
+    <div class="box2">content 2</div>
+    <div class="box3">content 2</div>
+
+</body>`
+
+</html>
