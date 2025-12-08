@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+transistion
+transform
+
+
+
+
+.box{
+    background: lightseagreen;
+            width:20%;
+            padding:20px;
+            margin:30px;
+            transition: all 1s;
+         }
+
+         .box:hover{
+            transform: translate(5px,-30px);
+            box-shadow: 0px 0px 5px 1px black;
+        }
+         .container{
+            width:25%;
+            border:1px solid black;
+            padding:20px;
+            transition: all 0.5s;
+            background: white;
+            color:black;
+            
+        }
+        .container:hover{
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            background:lightcoral;
+            color:white;
+        }
+        
+        .parent{
+            width: 200px;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+        }
+        img:hover{
+            transform:scale(1.3) rotateZ(-10deg);
+            transition: all 2s;
+        }
+
+
+        animations
+        it allows us to define keyframes 
+        where each keyframe having different stages
+        by managing the keyframes we can apply advanced 
+        animations
+
+        syntax
+        @keyframes blink {
+            from{//1st stage
+            //properties
+            }
+            to {//last stage
+            //properties
+            }
+        }
+        body{
+            animation-name:bgchange;
+            animation-duration:4s;
+        }
+        @keyframes  bgchange{
+            0%{
+                background-color: green;
+            }
+            33%{
+                background-color: red;
+            }
+            66%{
+                background-color:violet
+            }
+            100%{
+                background-color: navajowhite;
+            }
+        }
+        /* @keyframes  bgchange{
+            from{
+                background-color: green;
+            }
+            to{
+                background-color: navajowhite;
+            }
+        } 
+            
+        animation properties
+        1) animation-name: somename;
+        2) animation: duration 2s;
+        3) animation-delay:2s;
+        4) animation-direction:
+                              normal; 1,2,3,4
+                              reverse; 4,3,2,1
+                              alternate; normal + reverse
+                                        1 2 3 4 4 3 2 1
+                              alternate-reverse;reverse+normal
+                                         4 3 2 1 1 2 3 4
+        5) animation-iteration-count:infinite or 3;
+        
+        properties on the last stage will be applied
+        6) animation-fill-mode: forwards;
+
+        properties on the first stage will be applied
+        animation-fill-mode:  backwards;
+
+        animation-fill-mode:both;  forwards+backwards
+
+        7) animation-timing-functon:ease
+                                    ease-in
+                                    ease-out
+                                    ease-in-out
+                                    linear
+                                    steps(3)
+
+        */
+        
+
+        .container{
+            background: lightseagreen;
+            width:180px;
+            padding:10px;
+            margin:10px;
+            animation-name:move;
+            animation-duration:6s;
+            animation-fill-mode: both;
+            /* animation-delay: 2s; */
+            /* animation-direction:alternate-reverse ; */
+            /* animation-iteration-count: 4; */
+        }
+
+        @keyframes move{
+            0%{
+                background-color: red;
+                transform: translate(0px,0px);
+            }
+            100%{
+                transform: translate(500px,0px);
+            }
+            /* 66%{
+                transform: translate(400px,200px);
+            }
+            100%{
+                background-color: yellow;
+                transform: translate(0px,200px);
+            } */
+        }
+        </style>
+        </head>
+<body>
+
+    <div class="container" style="animation-timing-function:ease ;">some content</div>
+    <div class="container" style="animation-timing-function: ease-in;">some content</div>
+    <div class="container" style="animation-timing-function:ease-in-out ;">some content</div>
+    <div class="container" style="animation-timing-function:ease-out ;">some content</div>
+    <div class="container" style="animation-timing-function: linear;">some content</div>
+    <div class="container" style="animation-timing-function: steps(6);">some content</div>
+
+    
+    <!-- <div class="box">box content</div>
+
+    <div class="container">
+        container
+   </div>
+
+   <div class="parent">
+    <img src="https://demo.ayroui.com/templates/business-template/assets/images/header/hero-image.jpg" alt="">
+   </div> -->
+   </body>
+   </html>
